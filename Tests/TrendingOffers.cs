@@ -38,7 +38,7 @@ namespace cf_qa.Tests
         {
             var client = GetRestClient(false);
             var response = client.ExecuteGetAsync(EndpointsExtension.TrendingOffers);
-            response.Result.Should().Be(HttpStatusCode.Forbidden);
+            response.Result.StatusCode.Should().Be(HttpStatusCode.Forbidden);
         }
     }
 }

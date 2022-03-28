@@ -21,7 +21,7 @@ namespace cf_qa.Common
         [SetUp]
         public void Setup()
         {
-            Client ??= GetRestClient();
+            Client = GetRestClient();
         }
     }
 }
